@@ -16,7 +16,7 @@ pipeline {
                 // echo 'The image prefix is ${IMAGE_PREFIX}' //The same!! Will not parse the variable value
                 echo "The image prefix is ${IMAGE_PREFIX}"
                 // sh "mkdir panosdirectory"
-                sh 'echo \'Hello from jenkins\''
+                sh 'echo \'Hello from jenkins. The image prefix is: ${IMAGE_PREFIX}\''
 
 
             }
