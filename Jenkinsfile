@@ -17,7 +17,7 @@ pipeline {
                 echo "The image prefix is ${IMAGE_PREFIX}"
                 // sh "mkdir panosdirectory"
                 // sh 'echo \'Hello from jenkins. The image prefix is: ${IMAGE_PREFIX}\'' //Similar this wont analyse the variable name in the string
-                sh 'echo Hello from jenkins'
+                sh 'echo Hello from jenkins. The image prefix is ${IMAGE_PREFIX}'
 
 
 
