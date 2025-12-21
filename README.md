@@ -17,6 +17,6 @@ This Dockerfile when parameterized could be used as a base image for any contain
 
 <!-- **Requirements** -->
 ### Requirements
-- Having a host with docker installed, and also a docker group in which as host user are inside (not running as docker as sudo)
+- Having a host with docker installed, and also a docker group in which as host user are inside (not running docker as sudo)
 - The socket that communicates with the dockerd, to be correctly set up (The docker group user have rights on /var/run/docker.socket)
 - In the docker file change the "984" with the id of your docker group (run id command in terminal to see)
