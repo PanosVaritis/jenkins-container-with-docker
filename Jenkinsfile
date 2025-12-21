@@ -5,7 +5,7 @@ pipeline {
         GITHUB_URL = "ghcr.io"
         GITHUB_USERNAME = "panosvaritis"
         GITHUB_TOKEN = credentials("secondary-token")
-        IMAGE_PREFIX = '${GITHUB_URL}/${GITHUB_USERNAME}'
+        IMAGE_PREFIX = "${GITHUB_URL}/${GITHUB_USERNAME}"
     }
 
     stages {
