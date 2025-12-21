@@ -12,7 +12,8 @@ pipeline {
         stage ("Hello stage"){
             steps {
                 echo "Welcome to jenkins server"
-                echo '${IMAGE_PREFIX}'
+                // echo '${IMAGE_PREFIX}' //Will print ${IMAGE_PREFIX} and not the value of the variable
+                echo 'The image prefix is ${IMAGE_PREFIX}'
 
             }
             
