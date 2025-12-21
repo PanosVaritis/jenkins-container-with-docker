@@ -14,8 +14,8 @@ pipeline {
                 echo "Welcome to jenkins server"
             }
             steps {
-                echo ${IMAGE_PREFIX}
+                echo "${IMAGE_PREFIX}"
             }
         }
     }
-}
+}   
