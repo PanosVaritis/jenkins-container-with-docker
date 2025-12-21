@@ -12,7 +12,7 @@ pipeline {
         stage ("Hello stage"){
             steps {
                 echo "Welcome to jenkins server"
-                echo ${IMAGE_PREFIX}
+                echo '${IMAGE_PREFIX}'
 
             }
             
