@@ -31,6 +31,7 @@ pipeline {
                         sh """
                             cd ${result}
                             git pull origin jenkins
+                            pwd
                         """
                     }else {
                         echo "Directory not found!!! Cloning code"
@@ -38,6 +39,15 @@ pipeline {
                     }
                 }
 
+
+            }
+        }
+
+        stage ("Build stage"){
+            steps {
+                sh"""
+                    pwd
+                """
 
             }
         }
