@@ -37,7 +37,7 @@ pipeline {
                         sh 'git clone -b jenkins git@github.com:PanosVaritis/CrowdFunding-Application.git'
                     }
 
-                    env.REPO_NAME = sh (script : "cd ${WORKSPACE} && ls | grep 'CrowdFunding-Application'", returnStdout: true)
+                    env.REPO_NAME = sh (script : 'cd ${WORKSPACE} && ls | grep 'CrowdFunding-Application'', returnStdout: true)
                 }
 
 
