@@ -44,7 +44,7 @@ pipeline {
 
         stage ("Build stage"){
             steps {
-                sh 'cd CrowdFunding-Application'
+                sh 'cd CrowdFunding-Application && pwd'
                 sh"""
                     pwd
                 """
