@@ -47,7 +47,7 @@ pipeline {
         stage ("Build stage"){
             steps {
                 sh '''
-                    cd ${env.REPO_NAME}
+                    cd "${env.REPO_NAME}"
                     commit_hash=$(git log --oneline | awk 'NR == 1 {print $1}')
                     echo "The hash of the commit is ${commit_hash}"              
                 '''
