@@ -36,6 +36,8 @@ pipeline {
                         echo "Directory not found!!! Cloning code"
                         sh 'git clone -b jenkins git@github.com:PanosVaritis/CrowdFunding-Application.git'
                     }
+
+                    env.REPO_NAME = sh (script : "cd ${WORKSPACE} && ls | grep 'CrowdFunding-Application'", returnStdout: true)
                 }
 
 
@@ -44,10 +46,7 @@ pipeline {
 
         stage ("Build stage"){
             steps {
-                sh 'cd CrowdFunding-Application && pwd && ls && pwd'
-                sh"""
-                    pwd
-                """
+                    echo "${env.REPO_NAME}"
 
             }
         }
