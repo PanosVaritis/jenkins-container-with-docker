@@ -47,11 +47,11 @@ pipeline {
         stage ("Build stage"){
             steps {
                 echo "${WORKSCPACE}/${env.REPO_NAME}"
-                sh '''
-                    cd "${WORKSPACE}/${env.REPO_NAME}"
-                    commit_hash=$(git log --oneline | awk 'NR == 1 {print $1}')
-                    echo "The hash of the commit is ${commit_hash}"              
-                '''
+                // sh '''
+                //     cd "${WORKSPACE}/${env.REPO_NAME}"
+                //     commit_hash=$(git log --oneline | awk 'NR == 1 {print $1}')
+                //     echo "The hash of the commit is ${commit_hash}"              
+                // '''
 
             }
         }
