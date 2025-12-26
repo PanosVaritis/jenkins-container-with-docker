@@ -46,7 +46,7 @@ pipeline {
 
         stage ("Build stage"){
             steps {
-                echo "${env.REPO_NAME}"
+                echo "${WORKSCPACE}/${env.REPO_NAME}"
                 sh '''
                     cd "${WORKSPACE}/${env.REPO_NAME}"
                     commit_hash=$(git log --oneline | awk 'NR == 1 {print $1}')
